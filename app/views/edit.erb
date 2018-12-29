@@ -3,7 +3,8 @@
   <%= @article.title %>
   <%= @article.content %>
   <form>
-    <p>Edit Article Name: <input type="text" id="title" name="title"></p>
+    <p>Edit Article Name: <input type="text" id="title" name="article[title]"></p>
+    <p>Edit Article Content: <input type="text" id="content" name="article[content]"></p>
   </form>
   
 </html>
