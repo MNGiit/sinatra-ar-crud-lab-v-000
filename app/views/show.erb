@@ -9,4 +9,8 @@
     <input type="submit">
     
   </form>
-</html>
+</html
+
+<form method="post" action="/articles/<%= @article.id %>">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" />
