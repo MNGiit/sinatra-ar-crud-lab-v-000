@@ -5,12 +5,8 @@
   <!-- Delete Article  -->
   <form method="POST" action="/articles/<%= @article.id %>">
     
-    <input type="hidden" value="delete">
+    <input type="hidden" name="_method" value="delete">
     <input type="submit">
     
   </form>
-</html
-
-<form method="post" action="/articles/<%= @article.id %>">
-  <input type="hidden" name="_method" value="delete" />
-  <input type="submit" />
+</html>
