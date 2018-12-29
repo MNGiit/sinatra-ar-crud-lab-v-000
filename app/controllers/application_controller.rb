@@ -9,5 +9,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    erb :articles
   end
 end
