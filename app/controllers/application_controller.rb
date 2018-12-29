@@ -16,6 +16,11 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
   
+  get "/articles/:id" do
+    @article = Article.find_by_id(:id)
+    erb :articles
+  end
+  
   post "/articles" do
     x = Article.create(params[:article])
     x.save
